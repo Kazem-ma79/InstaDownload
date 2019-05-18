@@ -1,0 +1,125 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background: url('../html5gallery/skins/darkness/background.jpg') center top;
+}
+
+.wrapper {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 15px 20px;
+	min-width: 100px;
+	width: 350px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #1e2126;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+input[type="text"], input[type="submit"] {
+	border: 0;
+	margin: 0;
+	font: inherit;
+	font-size: 13px;
+	outline: none;
+	padding: 6px 9px;
+	border-radius: 3px;
+	width: 90%;
+	background-color: #fff;
+}
+
+input[type="text"] {
+	text-align: center;
+}
+input[type="text"]:placeholder {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+input[type="submit"] {
+	text-transform: uppercase;
+	margin-top: 3px;
+	border: 1px solid;
+	border-bottom-width: 3px;
+	cursor: pointer;
+	color: #fff;
+	transition: all .2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	transform: scale(1.02);
+}
+
+input[type="submit"]:active {
+	transform: scale(0.98);
+	border-bottom-width: 1px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+}
+
+
+
+
+.gallery {
+ background-color: transparent;
+ margin: 5px;
+ border: 1px solid #ccc;
+ float: left;
+ min-width: 180px;
+ width: 180px;
+ display: flex;
+ position: relative;
+}
+
+.gallery:hover {
+ border: 1px solid #777;
+}
+
+.gallery img {
+ width: 100%;
+ height: auto;
+ background-color: transparent;
+ margin-top: 4px;
+}
+
+.btmSplit {
+	position: absolute;
+	width: 80%;
+	bottom: 22%;
+}
+
+.container {
+	text-align: center;
+	width: calc(100% - 2px);
+	max-width: calc(100% - 2px);
+	height: 75%;
+	min-height: 75%;
+	max-height: 75%;
+	display: flex;
+	justify-content: space-around;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	flex-wrap: wrap;
+	border: 1px solid transparent;
+}
+
+.view-theme {
+	background-color: #373250 !important;
+	border-color: #272240 #272240 #575270 #272240 !important;
+	color: #FFF !important;
+}
+.download-theme {
+	background-color: #fcc439 !important;
+	border-color: #dca419 #dca419 #cc9409 #dca419 !important;
+	color: #000 !important;
+}
